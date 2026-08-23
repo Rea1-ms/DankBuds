@@ -1,0 +1,17 @@
+{
+  "id": "dankBuds",
+  "name": "Dank Buds",
+  "description": "Battery and noise control for MOONDROP Robin earbuds",
+  "version": "0.1.0",
+  "author": "Rea1-ms",
+  "type": "composite",
+  "capabilities": ["daemon", "dankbar-widget", "bluetooth"],
+  "components": {
+    "daemon": "./DankBudsDaemon.qml",
+    "widget": "./DankBudsWidget.qml"
+  },
+  "icon": "headphones",
+  "requires_dms": ">=1.5.0",
+  "dependencies": ["python"],
+  "permissions": ["process", "settings_read", "settings_write"]
+}
