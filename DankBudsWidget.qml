@@ -70,7 +70,7 @@ PluginComponent {
     Process {
         id: clientProcess
 
-        command: ["python", root.clientPath, "watch"]
+        command: ["python3", root.clientPath, "watch"]
         running: true
         stdinEnabled: true
 

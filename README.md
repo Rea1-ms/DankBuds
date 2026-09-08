@@ -7,12 +7,15 @@ DankBuds adds a compact earbud widget to DankBar. It displays the battery level 
 provides three-state noise control, and communicates with the earbuds directly through their
 Bluetooth SPP control channel.
 
+![DankBuds preview](dankbuds-preview.png)
+
 ## Features
 
 - Circular left and right earbud battery indicators.
 - Noise cancellation, off, and transparency controls.
 - A DankBar widget that appears when the earbuds are connected.
 - A persistent listening switch for releasing the control channel to another application.
+- A plugin setting for changing control-channel ownership while the widget is hidden.
 - Automatic reconnect and periodic state refresh.
 - Theme-aware icons and controls.
 
@@ -59,6 +62,8 @@ The **Listening** switch controls ownership of the Robin SPP channel:
 - Keep it enabled when using DankBuds.
 - Disable it before starting [BudsLink](https://github.com/maniacx/BudsLink).
 - Enable it again after BudsLink has closed.
+
+The same switch is available from the DMS plugin settings when the earbud widget is hidden.
 
 Disabling listening closes the active RFCOMM channel, unregisters the BlueZ profile, and leaves the
 DankBar icon visible so the plugin can be enabled again. The Bluetooth audio connection is not

@@ -18,7 +18,7 @@ PluginComponent {
     Process {
         id: backendProcess
 
-        command: ["python", root.backendPath, "backend"]
+        command: ["python3", root.backendPath, "backend"]
         running: root.listeningEnabled
 
         stderr: SplitParser {

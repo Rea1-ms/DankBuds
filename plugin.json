@@ -10,8 +10,10 @@
     "daemon": "./DankBudsDaemon.qml",
     "widget": "./DankBudsWidget.qml"
   },
+  "settings": "./Settings.qml",
+  "startupCheck": "./StartupCheck.qml",
   "icon": "headphones",
   "requires_dms": ">=1.5.0",
-  "dependencies": ["python"],
+  "dependencies": ["python3", "python-dbus", "python-gobject", "bluez"],
   "permissions": ["process", "settings_read", "settings_write"]
 }
